@@ -1,0 +1,6 @@
+data/com.github.rodneygauna.PomoPy.desktop.in
+data/com.github.rodneygauna.PomoPy.appdata.xml.in
+data/com.github.rodneygauna.PomoPy.gschema.xml
+src/main.py
+src/window.py
+src/window.ui
