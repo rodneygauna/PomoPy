@@ -1,3 +1,4 @@
-# pomopy
+# PomoPy
 
-A description of this project.
+A Pomodoro timer built for Gnome using Python.
+
