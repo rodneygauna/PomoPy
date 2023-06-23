@@ -8,6 +8,7 @@
     <child>
       <object class="GtkBox">
         <property name="orientation">vertical</property>
+        <!-- Title Bar - Start -->
         <child>
           <object class="GtkHeaderBar" id="header_bar">
             <child type="end">
@@ -18,15 +19,60 @@
             </child>
           </object>
         </child>
+        <!-- Title Bar - End -->
+        <!-- Main Window - Start -->
         <child>
-          <object class="GtkLabel" id="label">
-            <property name="label">Hello, World!</property>
-            <property name="vexpand">true</property>
-            <style>
-              <class name="title-1"/>
-            </style>
+          <object class="AdwLeaflet" id="leaflet">
+            <property name="can-unfold">false</property>
+            <property name="homogeneous">true</property>
+            <property name="can-navigate-back">true</property>
+            <!-- Home Page - Start -->
+            <child>
+              <object class="AdwStatusPage" id="label">
+                <property name="vexpand">true</property>
+                <property name="icon-name">stopwatch-symbolic</property>
+                <property name="title">PomoPy</property>
+                <property name="description">
+                  A pomodoro timer for Gnome built with Python
+                </property>
+                <!-- Home Page Buttons - Start -->
+                <child>
+                  <object class="AdwClamp">
+                    <property name="maximum-size">250</property>
+                      <!-- Button Box - Start -->
+                      <child>
+                        <object class="GtkBox">
+                          <property name="orientation">vertical</property>
+                            <!-- Timer Start Button - Start -->
+                            <child>
+                              <object class="GtkButton" id="timer_start_button">
+                                <child>
+                                  <object class="AdwButtonContent">
+                                    <property name="label">Start Timer</property>
+                                    <property name="icon-name">encoder-knob-symbolic</property>
+                                    <property name="halign">center</property>
+                                  </object>
+                                </child>
+                                <style>
+                                  <class name="pill"></class>
+                                  <class name="timer_start_button"></class>
+                                  <class name="opaque"></class>
+                                </style>
+                              </object>
+                            </child>
+                            <!-- Timer Start Button - End -->
+                        </object>
+                      </child>
+                      <!-- Button Box - End -->
+                  </object>
+                </child>
+                <!-- Home Page Buttons - End -->
+              </object>
+            </child>
+            <!-- Home Page - End -->
           </object>
         </child>
+        <!-- Main Window - End -->
       </object>
     </child>
   </template>

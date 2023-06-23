@@ -3,5 +3,12 @@
   <gresource prefix="/com/github/rodneygauna/PomoPy">
     <file preprocess="xml-stripblanks">window.ui</file>
     <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
+    <!-- CSS - Start -->
+    <file>style.css</file>
+    <!-- CSS - End -->
+    <!-- Icons - Start -->
+    <file preprocess="xml-stripblanks">icons/encoder-knob-symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/stopwatch-symbolic.svg</file>
+    <!-- Icons - End -->
   </gresource>
 </gresources>
